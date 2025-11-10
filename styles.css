@@ -1,0 +1,213 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Elms Sans", sans-serif;
+}
+
+.screen {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.full-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.pop-up {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up.active {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-height {
+  height: 100vh;
+  width: 60vw;
+}
+
+/*START PAGE*/
+#start-page {
+  background-color: #640d14;
+}
+
+#start-img {
+  width: 75vw;
+  height: 40vh;
+  margin-bottom: 30px;
+}
+
+/*MENU PAGE*/
+#menu-page {
+  background-color: #640d14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-cont {
+  gap: 15px;
+}
+
+#menu-h1 {
+  font-family: "Elms Sans", sans-serif;
+  font-size: 70px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke: 4px white;
+}
+
+/*LETTER PAGE*/
+#letter {
+  width: 80vw;
+  height: 80vh;
+  background-image: url(https://i.pinimg.com/736x/4e/5b/68/4e5b685bc259a3aa34ab6b616429e844.jpg);
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 1px 10px;
+  font-family: "Corinthia", cursive;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+  text-indent: 10px;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+.last {
+  margin-bottom: 20px;
+}
+
+/*SONG PAGE*/
+#song-base {
+  width: 80vw;
+  height: 50vh;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  box-shadow: 6px 6px 0 black;
+}
+
+.disc-img {
+  width: 300px;
+  height: 250px;
+  align-self: center;
+}
+
+#song-name {
+  align-self: center;
+  text-align: center;
+}
+
+/*PHRASE PAGE*/
+#phrase-base {
+  width: 80vw;
+  height: 50vh;
+  background-color: white;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.fist-img {
+  width: 270px;
+  height: 240px;
+  align-self: center;
+}
+
+.text-fist {
+  text-align: center;
+}
+
+/*BOTONES*/
+.btn-format {
+  font-family: "Elms Sans", sans-serif;
+  letter-spacing: 2px;
+  font-size: 15px;
+  padding: 7px 15px;
+  background-color: #800f2f;
+  border: 3px solid white;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.btn-format:hover {
+  border: 3px solid white;
+  background-color: black;
+  color: white;
+}
+
+#start-btn {
+  width: 30%;
+}
+
+#exit-btn {
+  width: 40%;
+}
+
+.close-btn {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  align-self: flex-end;
+}
+
+.white {
+  color: white;
+}
+
+.cursive {
+  font-family: "Corinthia", cursive;
+}
